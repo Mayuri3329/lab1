@@ -2,15 +2,22 @@ pipeline {
     agent any
 
     stages {
+
         stage('Build') {
             steps {
-                echo 'Building project...'
+                echo 'Building DevFlow website...'
             }
         }
 
         stage('Test') {
             steps {
-                echo 'Testing project...'
+                echo 'Testing website...'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo 'Deploying DevFlow website...'
             }
         }
     }
